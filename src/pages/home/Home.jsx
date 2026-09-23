@@ -7,7 +7,7 @@ const ratingImages = import.meta.glob("../../assets/ratings/*.png", {
   import: "default",
   query: "?url",
 });
-export function Home() {
+export function Home({ cart }) {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
 
@@ -24,7 +24,7 @@ export function Home() {
 
       <title>Ecommerce Project</title>
 
-      <Header />
+      <Header cart={cart} />
 
       <div className="home-page">
         {error && <p>{error}</p>}
