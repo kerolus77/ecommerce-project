@@ -5,11 +5,7 @@ import "./OrderPage.css";
 export function OrderPage() {
   return (
     <>
-      <link
-        rel="icon"
-        type="image/svg+xml"
-        href="/image/icons/orders-favicon.png"
-      />
+      <link rel="icon" type="image/svg+xml" href="/orders-favicon.png" />
 
       <title>Orders</title>
       <Header />
