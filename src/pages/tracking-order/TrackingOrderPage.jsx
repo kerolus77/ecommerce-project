@@ -7,7 +7,7 @@ export function TrackingOrderPage() {
       <link
         rel="icon"
         type="image/svg+xml"
-        href="/image/icons/tracking-favicon.png"
+        href="/tracking-favicon.png"
       />
 
       <title>Tracking Order</title>

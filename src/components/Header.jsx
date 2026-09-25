@@ -4,7 +4,8 @@ import searchIcon from "../assets/icons/search-icon.png";
 import logoWhite from "../assets/logo-white.png";
 import mobileLogoWhite from "../assets/mobile-logo-white.png";
 import "./Header.css";
-export function Header({ cart }) {
+
+export function Header({ cart = [] }) {
   return (
     <div className="header">
       <div className="left-section">
@@ -33,7 +34,7 @@ export function Header({ cart }) {
 
         <NavLink className="cart-link header-link" to="/checkout">
           <img className="cart-icon" src={cartIcon} alt="Cart" />
-          <div className="cart-quantity">{cart.length}</div>
+          <div className="cart-quantity">{cart?.length ?? 0}</div>
           <div className="cart-text">Cart</div>
         </NavLink>
       </div>
