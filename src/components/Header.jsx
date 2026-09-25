@@ -5,7 +5,7 @@ import logoWhite from "../assets/logo-white.png";
 import mobileLogoWhite from "../assets/mobile-logo-white.png";
 import "./Header.css";
 
-export function Header({ cart = [] }) {
+export function Header({ cart }) {
   return (
     <div className="header">
       <div className="left-section">

@@ -4,11 +4,7 @@ import "./TrackingOrderPage.css";
 export function TrackingOrderPage() {
   return (
     <>
-      <link
-        rel="icon"
-        type="image/svg+xml"
-        href="/tracking-favicon.png"
-      />
+      <link rel="icon" type="image/svg+xml" href="/tracking-favicon.png" />
 
       <title>Tracking Order</title>
 
