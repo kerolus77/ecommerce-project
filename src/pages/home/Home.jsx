@@ -4,7 +4,7 @@ import { Header } from "../../components/Header";
 import "./Home.css";
 import { ProductGrid } from "./ProductGrid";
 
-export function Home({ cart }) {
+export function Home({ cart, getCartItems }) {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
 
@@ -25,7 +25,7 @@ export function Home({ cart }) {
 
       <div className="home-page">
         {error && <p>{error}</p>}
-        <ProductGrid products={products} />
+        <ProductGrid products={products} getCartItems={getCartItems} />
       </div>
     </>
   );
